@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FM2C Configurators</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: #0f172a;
+        color: #e2e8f0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        background: linear-gradient(135deg, #38bdf8, #818cf8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+      }
+
+      .subtitle {
+        color: #94a3b8;
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        max-width: 480px;
+        line-height: 1.6;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        max-width: 720px;
+        width: 100%;
+      }
+
+      .card {
+        background: #1e293b;
+        border: 1px solid #334155;
+        border-radius: 16px;
+        padding: 2rem;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+        border-color: #818cf8;
+        box-shadow: 0 8px 32px rgba(129, 140, 248, 0.15);
+      }
+
+      .card-icon {
+        font-size: 3rem;
+        line-height: 1;
+      }
+
+      .card-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #f1f5f9;
+      }
+
+      .card-desc {
+        font-size: 0.95rem;
+        color: #94a3b8;
+        line-height: 1.6;
+      }
+
+      .card-tags {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-top: auto;
+      }
+
+      .tag {
+        font-size: 0.75rem;
+        padding: 4px 10px;
+        border-radius: 999px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .tag.docker { background: #0c4a6e; color: #38bdf8; }
+      .tag.firefox { background: #4a1d96; color: #c084fc; }
+      .tag.views { background: #14532d; color: #4ade80; }
+      .tag.settings { background: #713f12; color: #fbbf24; }
+    </style>
+  </head>
+  <body>
+    <h1>FM2C Configurators</h1>
+    <p class="subtitle">Choose a configurator below. Each one lets you toggle modules, inspect dependencies, and export ready-to-use configuration files.</p>
+
+    <div class="cards">
+      <a class="card" href="/docker/">
+        <span class="card-icon">🐳</span>
+        <span class="card-title">Docker SPL Configurator</span>
+        <span class="card-desc">Build and visualise Docker Compose configurations for nginx, Node.js, and PostgreSQL services. Toggle modules, spot conflicts, and download your compose file.</span>
+        <div class="card-tags">
+          <span class="tag docker">Docker</span>
+          <span class="tag views">7 Views</span>
+        </div>
+      </a>
+
+      <a class="card" href="/firefox/">
+        <span class="card-icon">🦊</span>
+        <span class="card-title">Firefox user.js Configurator</span>
+        <span class="card-desc">Configure Firefox preferences through multiple views — categories, search, wizard, terminal mode, and more. Export your settings as a ready-to-use user.js file.</span>
+        <div class="card-tags">
+          <span class="tag firefox">Firefox</span>
+          <span class="tag settings">7 Views</span>
+        </div>
+      </a>
+    </div>
+  </body>
+</html>
