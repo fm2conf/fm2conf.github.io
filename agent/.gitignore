@@ -1,0 +1,26 @@
+# Secrets and sensitive data
+auth.json
+
+# Session logs and history
+sessions/
+
+# Python and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# Build and lock files
+node_modules/
+.DS_Store
+pi-fff/
+.kanban/
+mcp-cache.json
+mcp-npx-cache.json
+
+# Models config (contains API keys/endpoints)
+models.json
