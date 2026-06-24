@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "react-vite-setup": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--with",
+        "fastmcp",
+        "fastmcp",
+        "run",
+        "setup_mcp/main.py"
+      ]
+    }
+  }
+}
