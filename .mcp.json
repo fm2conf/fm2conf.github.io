@@ -8,7 +8,7 @@
         "fastmcp",
         "fastmcp",
         "run",
-        "setup_mcp/main.py"
+        "mcp/main.py"
       ]
     }
   }

@@ -708,7 +708,7 @@ async def validate_spl_project(
 
 mcp.add_provider(
     SkillsDirectoryProvider(
-        roots=BASE_DIR / "setup_mcp" / ".agents" / "skills"
+        roots=BASE_DIR / "mcp" / ".agents" / "skills"
     )
 )
 
