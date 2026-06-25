@@ -1,6 +1,6 @@
-# pi agent (`~/.pi/agent2`)
+# pi agent config (replication)
 
-This directory contains a snapshot of the `pi` coding-agent configuration that was used to generate the configurators in this repository. It is provided for replication so reviewers can see the exact prompts, system extensions, and runtime settings that were in effect during generation.
+This directory contains the `pi` agent configuration used to generate the configurators in this repository. Use it to replicate the setup on your own machine.
 
 ## Source
 
@@ -29,4 +29,15 @@ The files here were copied verbatim from `~/.pi/agent2/` on the generation host.
 
 4. The orchestrator then either implemented the work itself or, for tasks that ran longer than a few minutes, decomposed it and spawned one or more worker `pi` instances using the prompts above.
 
+
+## Installing pi
+
+1. Install `pi` officially following the [installation guide](https://github.com/offline-ant/pi).
+2. Once installed, overwrite your agent directory with this replication package:
+
+   ```bash
+   cp -r agent/ ~/.pi/agent
+   ```
+
+3. Start `pi` — it will pick up the settings, prompts, and extensions from `~/.pi/agent/`.
 The `APPEND_SYSTEM.md` content is what each `pi` session sees in addition to its base system prompt; the orchestrator and worker `.md` files are the role-specific bodies that switch the agent into manager vs. implementer mode.
