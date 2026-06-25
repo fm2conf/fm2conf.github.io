@@ -1,7 +1,7 @@
 {
   "lastChangelogVersion": "0.79.6",
-  "defaultProvider": "llm2go",
-  "defaultModel": "Qwen/Qwen3.6-27B-FP8 - Reasoning OFF",
+  "defaultProvider": "openai",
+  "defaultModel": "gpt-5-mini",
   "hideThinkingBlock": true,
   "theme": "intellij-dark",
   "quietStartup": true,
